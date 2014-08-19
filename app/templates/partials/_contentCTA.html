@@ -1,0 +1,10 @@
+<div class="columns medium-6 main-cta-wrapper">
+    {{#content.cta}}
+    <div class="main-cta">
+        <h1 class="heading">{{{title}}}</h1>
+        {{#text}}<p class="text hide-for-small">{{{.}}}</p>{{/text}}
+        <a class="button {{button.color}}" href="{{{button.url}}}" {{#button.target}}target="{{.}}"{{/button.target}}>{{button.text}}</a>
+        <a class="terms" href="{{{terms.url}}}" {{#terms.target}}target="{{.}}"{{/terms.target}}>{{terms.text}}</a>
+    </div>
+    {{/content.cta}}
+</div>

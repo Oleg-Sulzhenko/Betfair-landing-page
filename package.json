@@ -1,0 +1,35 @@
+{
+  "name": "promo",
+  "version": "0.0.0",
+  "description": "basic list of dependencies",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "connect-livereload": "~0.1.4",
+    "grunt": "~0.4.2",
+    "grunt-open": "~0.2.2",
+    "grunt-autoprefixer": "~0.6.4",
+    "bower": "~0.9.2",
+    "matchdep": "~0.1.2",
+    "url": "~0.7.9",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-mustache-render": "~1.2.4",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-browser-sync": "~0.4.6",
+    "grunt-sass": "~0.6.1",
+    "grunt-shell": "~0.6.1",
+    "send": "~0.1.4",
+    "svgo": "~0.4.4",
+    "grunt-ftp-deploy": "~0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roman Taraban",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "1.0.0"
+  }
+}

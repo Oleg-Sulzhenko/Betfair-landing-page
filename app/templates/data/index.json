@@ -1,0 +1,106 @@
+{
+    "button":{
+        "color":"yellow"
+    },
+
+    "cacheImgBetfair":"?ver1",
+
+    "header": {
+        "logoImgCode": "casino-carbon",
+        "logoText": "Betfair Casino",
+        "loginText": "Login",
+        "loginUrl": "#",
+        "logologinUrl": "#"
+    },
+
+    "content":{
+        "cta":{
+            "title":"<span>EXCLUSIVE<br>200% BONUS</span><br>Plus 99 Free Spins",
+            "text":"Make your first three deposits count.",
+            "button":{
+                "text":"Get Bonus",
+                "url":"#",
+                "target":""
+            },
+            "terms":{
+                "text":"Terms & Conditions",
+                "url":"#",
+                "target":"_blank"
+            }
+        },
+
+        "steps":[
+            {
+                "number":"FIRST DEPOSIT",
+                "heading":"<span class='span1'>200%</span><br>MATCHED UP TO<br><span class='span2'>£200</span>",
+                "sub":"PLUS 22 FREE SPINS"
+            },
+            {
+                "number":"SECOND DEPOSIT",
+                "heading":"<span class='span1'>200%</span><br>MATCHED UP TO<br><span class='span2'>£100</span>",
+                "sub":"PLUS 33 FREE SPINS"
+            },
+            {
+                "number":"THIRD DEPOSIT",
+                "heading":"<span class='span1'>200%</span><br>MATCHED UP TO<br><span class='span2'>£100</span>",
+                "sub":"PLUS 44 FREE SPINS"
+            }
+        ]
+    },
+
+    "footer": {
+        "copy": "Please gamble responsibly. BETFAIR® and the Betfair logo are registered trade marks of The Sporting Exchange Limited. ©The Sporting Exchange Limited. All rights reserved. Betfair Casino Limited, Triq il-Kappillan Mifsud, St. Venera, SVR 1851, MALTA, is licensed and regulated by the Lotteries and Gaming Authority, Malta. Licence Number: LGA/CL1/294/2006 12th March 2008. Registered in Malta under company number C39498.",
+        "logos": [
+            {
+                "visibility": "",
+                "name": "PayPal",
+                "code": "paypal"
+            },
+            {
+                "visibility": "",
+                "name": "Visa",
+                "code": "visa"
+            },
+            {
+                "visibility": "",
+                "name": "MasterCard",
+                "code": "mastercard"
+            },
+            {
+                "visibility": "",
+                "name": "Instadebit",
+                "code": "instadebit"
+            },
+            {
+                "visibility": "",
+                "name": "Neteller",
+                "code": "neteller"
+            },
+            {
+                "visibility": "",
+                "name": "Ukash",
+                "code": "ukash"
+            },
+            {
+                "visibility": "",
+                "name": "Skrill",
+                "code": "skrill"
+            },
+            {
+                "visibility": "",
+                "name": "Bank Transfer",
+                "code": "banktransfer"
+            },
+            {
+                "visibility": "",
+                "name": "18+",
+                "code": "l18"
+            },
+            {
+                "visibility": "",
+                "name": "Responsible Gambling Counclit",
+                "code": "responsegambling"
+            }
+        ]
+    }
+}

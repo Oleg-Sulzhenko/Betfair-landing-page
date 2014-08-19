@@ -1,0 +1,84 @@
+.main-cta-wrapper {
+    //overflow: hidden;
+}
+.main-cta {
+    position: relative;
+    margin: 120px 0 0 0;
+        text-align: center;
+
+    &:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        top: -20px;
+        right: -80px;
+        width: 1119px;
+        height: 224px;
+        background: image-url('cta.png') no-repeat top right;
+    }
+
+    .heading {
+        cursor: pointer;
+        margin: 8px 10px ;
+            font-family: $heading-font-family;
+            text-transform: uppercase;
+            font-size: 34px;
+            line-height: 80%;
+        span {
+            margin-bottom: 6px;
+                font-size: 96px;
+                line-height: 80%;
+        }
+    }
+    .text {
+        display: block;
+        margin: 12px 15px;
+            line-height: 20px;
+            font-size: 18px;
+    }
+    .button {
+        display: block;
+        margin: 16px 0 8px 0;
+            font-size: 40px;
+            line-height: em(40,59);
+    }
+    .terms {
+        padding-top: 12px;
+        margin-left: 87px;
+        @extend %link;
+            font-size: 12px;
+            font-family: $body-font-family-simple;
+    }
+}
+
+@media #{$medium-up} {
+    .main-cta {
+        padding: 0;
+            text-align: left;
+        .button {
+            float: left;
+            margin: 17px 0 0 0;
+                font-size: 44px;
+                line-height: em(33,48);
+        }
+        .terms {
+            clear: both;
+            float: left;
+        }
+        .text {
+            display: block;
+            margin: 12px 0 0 0;
+                line-height: 110%;
+                font-size: 18px;
+        }
+        .heading {
+            margin: 0;
+            width: auto;
+                font-size: 37px;
+                line-height: 90%;
+            span {
+                font-size: 58px;
+            }
+        }
+    }
+}

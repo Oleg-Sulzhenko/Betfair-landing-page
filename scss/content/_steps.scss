@@ -1,0 +1,45 @@
+.step-wrapper {
+    .step-holder {
+        margin-top: 40px;
+        //outline: 1px solid;
+            text-align: center;
+            font-family: $banner-font-family;
+    }
+        .number {
+            font-family: 'itcavantgardestd-bold';
+            z-index: 1;
+            position: relative;
+                color: #000;
+                line-height: 32px;
+            &:after {
+                z-index: -1;
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: red;
+                transform: skewX(-45deg);
+            }
+        }
+
+        .heading {
+            font-size: 37px;
+            .span1 {
+                margin: 12px 0 -48px 0;
+                display: block;
+                    font-size: 120px;
+            }
+            .span2 {
+                display: block;
+                margin: -6px 0 0px 0;
+                    font-size: 128px;
+            }
+        }
+
+        .sub-heading {
+            font-size: 32px;
+            color: #ff0000;
+        }
+}

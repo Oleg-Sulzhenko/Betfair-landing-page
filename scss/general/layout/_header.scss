@@ -1,0 +1,63 @@
+.main-header {
+    width: 100%;
+    z-index: 1;
+        font-size: rem-calc(18);
+        line-height: rem-calc(48px);
+    // safari 5, ios 4
+    background-image: linear-gradient(change-color($header-primary-color, $alpha: .9), change-color($header-primary-color-dark, $alpha: .9));
+    // other browser
+    background-image: linear-gradient(90deg, change-color($header-primary-color, $alpha: .9), change-color($header-primary-color-dark, $alpha: .9));
+
+    @media #{$screen} and(max-width:639px) {
+        height: 38px;
+    }
+
+    .logo {
+        @include hide-text;
+        display: block;
+        width: 224px;
+        max-width: 100%;
+        height: rem-calc(48px);
+        background: no-repeat  left 46%;
+        background-size: 100%;
+        @media #{$screen} and(max-width:639px) {
+            height: rem-calc(38px);
+        }
+        &.arcade-carbon      {background-image: $logo-arcade-carbon;}
+        &.arcade-white       {background-image: $logo-arcade-white;}
+        &.casino-carbon      {background-image: $logo-casino-carbon;}
+        &.casino-white       {background-image: $logo-casino-white;}
+        &.bingo-carbon       {background-image: $logo-bingo-carbon;}
+        &.bingo-white        {background-image: $logo-bingo-white;}
+        &.livecasino-carbon  {background-image: $logo-livecasino-carbon;}
+        &.livecasino-white   {background-image: $logo-livecasino-white;}
+        &.poker-carbon       {background-image: $logo-poker-carbon;}
+        &.poker-white        {background-image: $logo-poker-white;}
+    }
+    .login {
+        float: right;
+        @extend %link;
+            color: #1e1e1e;
+        @media #{$screen} and(max-width:639px) {
+            line-height: rem-calc(38px);
+        }
+    }
+}
+
+// logo Android 2.3, ie-8
+&.no-svg {
+    .main-header {
+        .logo {
+            &.arcade-carbon      {background-image: $logo-arcade-carbon-png;}
+            &.arcade-white       {background-image: $logo-arcade-white-png;}
+            &.casino-carbon      {background-image: $logo-casino-carbon-png;}
+            &.casino-white       {background-image: $logo-casino-white-png;}
+            &.bingo-carbon       {background-image: $logo-bingo-carbon-png;}
+            &.bingo-white        {background-image: $logo-bingo-white-png;}
+            &.livecasino-carbon  {background-image: $logo-livecasino-carbon-png;}
+            &.livecasino-white   {background-image: $logo-livecasino-white-png;}
+            &.poker-carbon       {background-image: $logo-poker-carbon-png;}
+            &.poker-white        {background-image: $logo-poker-white-png;}
+        }
+    }
+}

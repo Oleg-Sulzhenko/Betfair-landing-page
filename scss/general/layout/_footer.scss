@@ -1,0 +1,53 @@
+.main-footer{
+    clear: both;
+    background: #191e1a;
+    padding: 60px 0 160px 0;
+        font-family: $body-font-family-simple;
+        font-size: 10px;
+        line-height: 140%;
+        color: #9B9B9B;
+        text-align: center;
+    a {
+        color: $body-font-color;
+        text-decoration: none;
+    }
+
+    .logos {
+        margin: 0;
+        padding: 0;
+        li {
+            @include hide-text;
+            height:em(10px,40px);
+            margin:0 em(10px,4px);
+            display:inline-block;
+            background: image-url('logos-#{$footer-icons-type}.png') no-repeat left;
+            background-size: auto em(10px,35px);
+            &.none {
+                display: none;
+            }
+        }
+        .paypal           {background-position: 0               em(10px,7px); width: em(10px,90px);  }
+        .visa             {background-position: em(10px,-92px)  em(10px,7px); width: em(10px,67px);  }
+        .mastercard       {background-position: em(10px,-158px) em(10px,7px); width: em(10px,58px);  }
+        .instadebit       {background-position: em(10px,-217px) em(10px,7px); width: em(10px,132px); }
+        .neteller         {background-position: em(10px,-349px) em(10px,7px); width: em(10px,97px);  }
+        .ukash            {background-position: em(10px,-445px) em(10px,7px); width: em(10px,83px);  }
+        .skrill           {background-position: em(10px,-528px) em(10px,7px); width: em(10px,68px);  }
+        .banktransfer     {background-position: em(10px,-596px) em(10px,7px); width: em(10px,48px);  }
+        .l18              {background-position: em(10px,-645px) em(10px,7px); width: em(10px,33px);  }
+        .responsegambling {background-position: right           em(10px,7px); width: em(10px,126px); }
+     }
+}
+@media #{$small-only} {
+    .main-footer {
+        font-size: 8px;
+    }
+   .main-footer .logos {
+        font-size: 8px;
+   }
+}
+@media #{$medium-only} {
+   .main-footer {
+        font-size: 8px;
+    }
+}

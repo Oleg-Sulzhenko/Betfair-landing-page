@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+html,
+body {
+    min-height: 100%;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $heading-font-weight;
+}
+
+.content-holder {
+    .row {
+        max-width: 320px;
+    }
+    @media #{$medium-up} {
+        .row {
+            max-width: 976px;
+        }
+    }
+}
+
+body>*{
+    transition: opacity 1s;
+}
+body:not(.loaded)>* {
+    opacity: 0;
+}
