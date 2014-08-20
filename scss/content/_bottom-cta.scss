@@ -1,65 +1,121 @@
 .bottom-cta {
-    margin-top: 100px;
+    text-align: center;
+    margin-top: 60px;
+    
+    @media #{$screen} and (min-width: 640px) {
+        margin-top: em(16,100);
+        font-size: 12px;
+    }
+    @media #{$screen} and (min-width: 860px) {
+        font-size: 14px;
+    }
+    @media #{$screen} and (min-width: 1024px) {
+        font-size: 16px;
+    }
+
     .heading {
         z-index: 1;
         position: relative;
         float: left;
         margin: 0;
-            font-size: 56px;
+        padding: 20px 0;
+            font-size: em(16,56);
+        
+        @media #{$screen} and (min-width: 640px) {
+            padding: 0;
+        }
+
         &:after {
             z-index: -1;
             content: '';
             position: absolute;
-            top: -8px;
-            left: -60px;
-            width: 580px;
-            height: 70px;
-            background: red;
-            transform: skewX(-45deg);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // safari 5, ios 4
+            background-image:linear-gradient(change-color($primary-color,$alpha:1), change-color($primary-color-dark,$alpha:1));
+            // other browser
+            background-image:linear-gradient(45deg, change-color($primary-color,$alpha:1), change-color($primary-color-dark,$alpha:1));
+            
+            @media #{$screen} and (min-width: 640px) {
+                top: em(56,-8);
+                left: em(56,-60);
+                width: em(56,580);
+                height: em(56,70);
+                transform: skewX(-45deg);
+            }
         }
     }
     .text {
+        margin-top: 0;
+        padding: 20px 10px;
         z-index: 1;
         position: relative;
         clear: both;
         float: left;
         margin: 0;
-        margin-top: 16px;
-            font-family: $body-font-family-simple;
-            font-size: 18px;
+            font-family: 'itcavantgardestd-bk';
+            font-size: em(16,18);
+        
+        @media #{$screen} and (min-width: 640px) {
+            margin-top: em(18,16);
+            padding: 0;
+        }
+
         &:after {
             z-index: -1;
             content: '';
             position: absolute;
-            top: -10px;
-            left: 11px;
-            width: 400px;
-            height: 40px;
             background: #000;
-            transform: skewX(-45deg);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            @media #{$screen} and (min-width: 640px) {
+                top: em(18,-10);
+                left: em(18,11);
+                width: em(18,400);
+                height: em(18,40);
+                transform: skewX(-45deg);
+            }
         }
         &:before {
-            content: '';
             position: absolute;
-            top: -10px;
-            left: -30px;
-            width: 90px;
-            height: 40px;
+            top: em(18,-10);
+            left: em(18,-30);
+            width: em(18,90);
+            height: em(18,40);
             background: #000000;
             z-index: -1;
+            
+            @media #{$screen} and (min-width: 640px) {
+                content: '';
+            }
         }
     }
     .button {
+        width: 100%;
+        margin-top: 20px;
         clear: both;
         float: left;
-        margin-top: 40px;
-            font-size: 44px;
+            font-size: em(16,44);
+        
+        @media #{$screen} and (min-width: 640px) {
+            width: auto;
+            margin-top: em(44,50);
+        }
     }
 }
 
+// bottom image
 .bottomImage {
-    height: 350px;
-    margin-top: 40px;
+    //display: none;
+    overflow: hidden;
+    height: em(16,350);
+    margin-top: em(16,40);
+    font-size: 10px;
     background: #231b32; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzIzMWIzMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxMTBkMTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -72,8 +128,30 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#231b32', endColorstr='#110d19',GradientType=0 ); /* IE6-8 */
 
     img {
-        margin: -80px 0 0 470px;
+        margin-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: em(16,764);
+        max-width: none;
+        position: relative;
     }
+    
+    @media #{$screen} and (min-width: 640px) {
+        overflow: inherit;
+        font-size: 12px;
+        img {
+            transform: none;
+            margin-top: em(16,-100);
+            float: right;
+        }
+    }
+    @media #{$screen} and (min-width: 860px) {
+        font-size: 14px;
+    }
+    @media #{$screen} and (min-width: 1024px) {
+        font-size: 16px;
+    }
+
 }
 
 

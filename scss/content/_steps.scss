@@ -1,45 +1,68 @@
 .step-wrapper {
+    //margin-top: -90px;
     .step-holder {
-        margin-top: 40px;
+        margin-bottom: 40px;
         //outline: 1px solid;
             text-align: center;
             font-family: $banner-font-family;
+        
+        @media #{$screen} and (max-width: 359px) {
+            font-size: 14px;
+        }
+        @media #{$screen} and (min-width: 640px) {
+            margin-bottom: 0px;
+            font-size: 10px;
+        }
+        @media #{$screen} and (min-width: 760px) {
+            font-size: 12px;
+        }
+        @media #{$screen} and (min-width: 860px) {
+            font-size: 14px;
+        }
+        @media #{$screen} and (min-width: 1024px) {
+            font-size: 16px;
+        }
     }
         .number {
             font-family: 'itcavantgardestd-bold';
             z-index: 1;
             position: relative;
                 color: #000;
-                line-height: 32px;
+                line-height: em(16,32);
             &:after {
                 z-index: -1;
                 content: '';
                 position: absolute;
-                top: 0px;
-                left: 0px;
-                width: 100%;
+                top: 0%;
+                left: 50%;
+                width: em(16,280);
                 height: 100%;
-                background: red;
-                transform: skewX(-45deg);
+                transform: skewX(-45deg) translateX(-50%);
+                margin-left: em(16,5);
+                // safari 5, ios 4
+                background-image:linear-gradient(change-color($primary-color,$alpha:1), change-color($primary-color-dark,$alpha:1));
+                // other browser
+                background-image:linear-gradient(45deg, change-color($primary-color,$alpha:1), change-color($primary-color-dark,$alpha:1)); 
+                background-color: #e70034;
             }
         }
 
         .heading {
-            font-size: 37px;
+            font-size: em(16,34);
             .span1 {
-                margin: 12px 0 -48px 0;
+                margin: em(110,12) 0 em(110,-48) 0;
                 display: block;
-                    font-size: 120px;
+                    font-size: em(34,110);
             }
             .span2 {
                 display: block;
-                margin: -6px 0 0px 0;
-                    font-size: 128px;
+                margin: em(118,-6) 0 0 0;
+                    font-size: em(34,118);
             }
         }
 
         .sub-heading {
-            font-size: 32px;
+            font-size: em(16,32);
             color: #ff0000;
         }
 }

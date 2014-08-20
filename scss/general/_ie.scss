@@ -1,9 +1,7 @@
 // CONTENT
 // ie8
 .ie8 {
-    .content-holder {
-        margin-top: 48px;
-    }
+
 }
 
 // HEADER
@@ -17,15 +15,34 @@
 // ie8
 .ie8 {
     .main-header {
-        height: 48px;
+        height: 36px;
         filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#FFC61D', endColorstr='#FF9711');
+        .logo-wrapper{
+            width: 24%;
+        }
+        .main-menu{
+            width: 40%;
+        }
     }
     .logo {
-        width: 280px;
-        height: 48px;
+        height: 36px;
     }
     .login {
-        line-height: 48px;
+        line-height: 36px;
+    }
+    .content-holder {
+        margin-top: 0;
+    }
+    .main-video{
+        height: 100%;
+        min-height: 100%;
+        position: static !important;
+    }
+    .prevent-video-hover{
+        top: 0;
+    }
+    .step-wrapper .number:after{
+        left: 0;
     }
 }
 

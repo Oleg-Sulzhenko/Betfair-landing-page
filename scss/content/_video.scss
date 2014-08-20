@@ -1,12 +1,12 @@
 #video-backup-img{
-	display: none;
+    display: none;
     position: absolute;
-    top: 48px;
+    top: 36px;
+    left: 0;
 }
 
 .main-video{
-	height: 100vh;
-    margin-top: -48px;
+    height: 100vh;
     overflow: hidden;
     position: fixed;
     width: 100%;

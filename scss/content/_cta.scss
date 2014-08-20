@@ -1,43 +1,81 @@
-.main-cta-wrapper {
-    //overflow: hidden;
-}
 .main-cta {
-    position: relative;
-    margin: 120px 0 0 0;
-	text-align: center;
-	> * {
-		position: relative;
-		z-index: 1;
-	}
-
-
-    &:after {
-        z-index: 0;
-        content: '';
-        position: absolute;
-        top: -20px;
-        right: -80px;
-        width: 1119px;
-        height: 224px;
-        background: image-url('cta.png') no-repeat top right;
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+    position: absolute;;
+    top: 160px;
+    text-align: center;
+    transition: opacity 0.5s;
+    &.fade-complete{
+        opacity: 0 !important;
+        transition: opacity 0.5s;
     }
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+    > span {
+        display: none;
+        z-index: -1;
+        position: absolute;
+        // safari 5, ios 4
+        background-image:linear-gradient(change-color($primary-color,$alpha:1), change-color($primary-color-dark,$alpha:1));
+        // other browser
+        background-image:linear-gradient(45deg, change-color($primary-color,$alpha:1), change-color($primary-color-dark,$alpha:1));        
+    }
+        .span1 {
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .span2 {
+            top: -25px;
+            left: -195px;
+            opacity: 0.8;
+        }
+        .span3 {
+            top: -25px;
+            left: -265px;
+            opacity: 0.6;
+        }
+        .span4 {
+            top: -25px;
+            left: -335px;
+            opacity: 0.4;
+        }
+        .span5 {
+            top: -25px;
+            left: -405px;
+            opacity: 0.3;
+        }
+        .span6 {
+            top: -25px;
+            left: -475px;
+            opacity: 0.2;
+        }
 
     .heading {
         cursor: pointer;
-        margin: 8px 10px ;
-            font-family: $heading-font-family;
+        margin: 8px 10px;
+            font-family: 'itcavantgardestd-bk';
             text-transform: uppercase;
             font-size: 34px;
             line-height: 80%;
         span {
-            margin-bottom: 6px;
-                font-size: 96px;
+            margin-bottom: -16px;
+            display: block;
+            font-family: $heading-font-family;
+                font-size: 62px;
                 line-height: 80%;
         }
     }
     .text {
         display: block;
         margin: 12px 15px;
+            font-family: 'itcavantgardestd-bk';
             line-height: 20px;
             font-size: 18px;
     }
@@ -48,18 +86,36 @@
             line-height: em(40,59);
     }
     .terms {
-        padding-top: 12px;
-        margin-left: 87px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        padding-top: 8px;
         @extend %link;
             font-size: 12px;
             font-family: $body-font-family-simple;
     }
 }
-
+.no-cssanimations .main-cta {
+    padding: 20px 30px;
+    top: 160px !important;
+}
 @media #{$medium-up} {
     .main-cta {
-        padding: 0;
+        margin: 0;
+        padding: 0 0 0 10px;
             text-align: left;
+        > span {
+            display: block;
+            width: 55px;
+            height: 245px;
+            transform: skewX(-45deg);
+        }
+            .span1 {
+                top: -25px;
+                left: -125px;
+                width: 580px;
+                height: 245px;
+            }
         .button {
             float: left;
             margin: 17px 0 0 0;
@@ -69,10 +125,13 @@
         .terms {
             clear: both;
             float: left;
+            transform: none;
+            margin-left: 85px;
+            margin-top: 5px;
         }
         .text {
             display: block;
-            margin: 12px 0 0 0;
+            margin: 11px 0 0 0;
                 line-height: 110%;
                 font-size: 18px;
         }
