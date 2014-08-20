@@ -12,7 +12,7 @@
 	<title>Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<link rel="stylesheet" href="css/app.css">
-	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-1.11.1.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -23,10 +23,20 @@
 <!--header start-->
 <header class="main-header">
     <div class="row">
-        <div class="columns small-8">
+        <div class="logo-wrapper">
             <a href="#" class="logo casino-carbon">Betfair Casino</a>
         </div>
-        <div class="columns small-4"><a class="login" href="#">Login</a></div>
+        <div class="main-menu">
+            <ul>
+                <li><a href="#Roulette">Roulette</a></li>
+                <li><a href="#Blackjack">Blackjack</a></li>
+                <li><a href="#Slots">Slots</a></li>
+            </ul>
+        </div>
+        <div class="login-wrapper">
+            <a class="login" href="#">Log in</a>
+            <p class="text">LIMITED TIME OFFER</p>
+        </div>
     </div>
 </header>
 <!--header end-->
@@ -35,24 +45,29 @@
 <img src="../img/back-1.jpg" id="video-backup-img"/>
 <div id="video" class="main-video">
 	<div class='embed-container'>
-		<iframe id="video-iframe" data-src="//player.vimeo.com/video/76979871?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="100%" height="100%"
+		<iframe id="video-iframe" data-src="//player.vimeo.com/video/76979871?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;loop=1" width="100%" height="100%"
 				frameborder="0"
 				webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 </div>
 <!--slider end-->
     <div class="prevent-video-hover">
-		<div class="row">
-<div class="columns medium-6 main-cta-wrapper">
-    <div class="main-cta">
-        <h1 class="heading"><span>EXCLUSIVE<br>200% BONUS</span><br>Plus 99 Free Spins</h1>
-        <p class="text hide-for-small">Make your first three deposits count.</p>
-        <a class="button yellow" href="#" >Get Bonus</a>
-        <a class="terms" href="#" target="_blank">Terms &amp; Conditions</a>
+    <div class="row">
+<div class="main-cta">
+    <h1 class="heading"><span>EXCLUSIVE<br>200% BONUS</span><br>Plus 99 Free Spins</h1>
+    <p class="text hide-for-small">Make your first three deposits count.</p>
+    <a class="button yellow" href="#" >Get Bonus</a>
+    <a class="terms" href="#" target="_blank">Terms &amp; Conditions</a>
+    
+    <span class="span1"></span>
+    <span class="span2"></span>
+    <span class="span3"></span>
+    <span class="span4"></span>
+    <span class="span5"></span>
+    <span class="span6"></span>
+</div>
     </div>
 </div>
-		</div>
-    </div>
 </div>
 <!--content start-->
 <div class="content-holder">
@@ -85,14 +100,17 @@
 <div class="columns medium-12">
     <div class="bottom-cta clearfix">
         <h1 class="heading">PLAY. WIN. REPEAT.</h1>
-        <p class="text hide-for-small">Hundreds of games. Classics old and new.</p>
+        <p class="text">Hundreds of games. Classics old and new.</p>
         <a class="button yellow" href="" >Get bonus</a>
     </div>
 </div>
     </div>
     <div class="bottomImage">
-        <img src="img/bottom-img.png" alt="">
+        <div class="row">
+            <img src="img/bottom-img.png" alt="">
+        </div>
     </div>
+    <div class="bg"></div>
 </div>
 <!--content end-->
 <!--footer start-->
