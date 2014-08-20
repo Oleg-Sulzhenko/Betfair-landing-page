@@ -66,7 +66,7 @@ function showResults() {
 //Scrol Effects
 var fadeUntil = 500;
 var fadeUntilText = 450;
-var fading = $('.content-holder');
+var fading = $('.bg');
 var fadingText = $('.main-cta');
 $(window).bind('scroll', function(){
     var offset = $(document).scrollTop();
