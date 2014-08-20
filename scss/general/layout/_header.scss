@@ -1,6 +1,7 @@
 .main-header {
     width: 100%;
-    z-index: 1;
+	position: relative;
+    z-index: 11;
         font-size: rem-calc(18);
         line-height: rem-calc(48px);
     // safari 5, ios 4
