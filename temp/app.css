@@ -1985,6 +1985,9 @@ body:not(.loaded) > * {
     overflow: hidden;
     max-width: 100%;
     height: auto; }
+    @media screen and (max-width: 1280px) and (max-height: 1024px) and (min-height: 799px) {
+      .main-video .embed-container {
+        transform: scale(2); } }
     .main-video .embed-container #video-iframe {
       display: none;
       position: absolute;
