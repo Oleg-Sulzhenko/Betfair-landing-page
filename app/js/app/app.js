@@ -96,7 +96,7 @@ function showResults() {
         $("#video-backup-img").show();
     }
 }
-
+ 
 if (!(isMobileDevice)) {
     //Scrol Effects
     var fadeUntil = 500;
